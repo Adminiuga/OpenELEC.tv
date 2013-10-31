@@ -154,6 +154,9 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
 # OEM packages
   [ "$OEM_SUPPORT" = "yes" ] && $SCRIPTS/install oem
 
+# GNU Screen
+  [ "$SCREEN" = "yes" ] && $SCRIPTS/install screen
+
 # copy project related files to filesystem
   if [ -d "$PROJECT_DIR/$PROJECT/filesystem" ]; then
     cp -PR $PROJECT_DIR/$PROJECT/filesystem/* $INSTALL

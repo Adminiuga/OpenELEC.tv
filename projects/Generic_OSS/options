@@ -1,3 +1,6 @@
+# build and install GNU Screen terminal multiplexer (yes / no)
+  SCREEN="yes" 
+
 # Name of the Distro to build (full name, without special charcters)
   DISTRONAME="OpenELEC"
   if [ "$XBMC" = "master" ]; then
@@ -344,6 +347,9 @@
 
 # Coreboot support (yes / no)
   COREBOOT="no"
+
+# build and install GNU Screen terminal multiplexer (yes / no)
+  SCREEN="yes" 
 
 # Distribution Specific source location
   DISTRO_MIRROR="http://sources.openelec.tv/mirror"

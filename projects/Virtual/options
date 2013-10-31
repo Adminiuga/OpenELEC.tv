@@ -340,6 +340,9 @@
 # Coreboot support (yes / no)
   COREBOOT="no"
 
+# build and install GNU Screen terminal multiplexer (yes / no)
+  SCREEN="yes" 
+
 # Distribution Specific source location
   DISTRO_MIRROR="http://sources.openelec.tv/mirror"
   DISTRO_SRC="http://sources.openelec.tv/$OPENELEC_VERSION"
