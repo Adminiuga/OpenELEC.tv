@@ -46,10 +46,6 @@ PKG_CONFIGURE_OPTS_TARGET="--datadir=/usr/share \
         --enable-telnet \
         --enable-use-locale"
 
-pre_configure_target () {
-	LDFLAGS="$LDFLAGS -L$ROOT/$TOOLCHAIN/lib"
-}
-
 post_make_target() {
   # dont build parallel
     MAKEFLAGS=-j1
